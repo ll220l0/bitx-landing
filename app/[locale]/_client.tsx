@@ -161,11 +161,11 @@ export default function LandingClient({ locale }: { locale: Locale }) {
         </div>
       ) : null}
 
-      <section className="relative isolate overflow-hidden pt-3 md:pt-5">
+      <section className="relative isolate overflow-hidden pt-1 md:pt-2">
         <Container>
-          <div className="grid items-center gap-10 py-8 md:grid-cols-12 md:gap-12 md:py-14">
-            <div className="md:col-span-7 reveal" data-reveal>
-              <h1 className="display-font mt-5 text-4xl font-extrabold leading-tight md:text-6xl md:leading-[1.08]">{heroTitle}</h1>
+          <div className="grid items-center gap-10 py-6 md:grid-cols-12 md:gap-10 md:py-10">
+            <div className="md:col-span-6 reveal" data-reveal>
+              <h1 className="display-font text-[40px] font-extrabold leading-[1.08] sm:text-5xl md:text-[58px] xl:text-[66px]">{heroTitle}</h1>
               <p className="mt-5 max-w-2xl text-base text-muted md:text-lg">{dict.hero.sub}</p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -188,7 +188,7 @@ export default function LandingClient({ locale }: { locale: Locale }) {
               ) : null}
             </div>
 
-            <div className="md:col-span-5 reveal reveal-delay-1" data-reveal>
+            <div className="md:col-span-6 reveal reveal-delay-1" data-reveal>
               <div className="ui-card glass-card rounded-3xl p-6 shadow-soft md:p-7">
                 <div className="text-xs uppercase tracking-[0.16em] text-electric">{locale === "en" ? "Coding in progress" : "Кодинг в процессе"}</div>
                 <div className="display-font mt-3 text-2xl font-semibold">{locale === "en" ? "From commit to release" : "От коммита до релиза"}</div>
@@ -322,19 +322,19 @@ export default function LandingClient({ locale }: { locale: Locale }) {
             ))}
           </div>
         </Section>
-        <Section title={dict.cases.title} tone="contrast">
-          <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2">
+        <Section title={dict.cases.title} tone="muted">
+          <div className="grid gap-4 md:grid-cols-3">
             {dict.cases.items.map((c: any, idx: number) => (
               <article
                 key={idx}
-                className="ui-card-ink ui-card-hover reveal min-h-[180px] min-w-[290px] snap-start rounded-2xl p-6 md:min-w-[360px]"
+                className={`ui-card ui-card-hover ui-card-muted reveal h-full rounded-2xl p-6 ${idx ? "reveal-delay-1" : ""}`}
                 data-reveal
               >
                 <div className="flex items-center justify-between gap-3">
-                  <h3 className="display-font text-lg font-semibold text-white">{c.name}</h3>
-                  <span className="rounded-full border border-white/30 bg-white/10 px-2.5 py-1 text-xs text-slate-100">{c.tag}</span>
+                  <h3 className="display-font text-lg font-semibold text-fg">{c.name}</h3>
+                  <span className="rounded-full border border-line bg-white px-2.5 py-1 text-xs text-muted">{c.tag}</span>
                 </div>
-                <p className="mt-3 text-[15px] leading-relaxed text-slate-200">{c.text}</p>
+                <p className="mt-3 text-[15px] leading-relaxed text-muted">{c.text}</p>
               </article>
             ))}
           </div>
