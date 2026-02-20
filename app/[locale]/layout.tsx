@@ -60,6 +60,10 @@ export default function RootLayout({
 
   return (
     <html lang={loc} className={`${bodyFont.variable} ${displayFont.variable}`}>
+      <head>
+        <meta name="color-scheme" content="light" />
+        <meta name="supported-color-schemes" content="light" />
+      </head>
       {gaId ? (
         <>
           <Script
