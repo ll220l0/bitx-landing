@@ -161,26 +161,26 @@ export default function LandingClient({ locale }: { locale: Locale }) {
         </div>
       ) : null}
 
-      <section className="relative isolate overflow-hidden pt-1 md:pt-2">
+      <section className="relative isolate overflow-hidden pt-0">
         <Container>
-          <div className="grid items-center gap-10 py-6 md:grid-cols-12 md:gap-10 md:py-10">
-            <div className="md:col-span-6 reveal" data-reveal>
-              <h1 className="display-font text-[40px] font-extrabold leading-[1.08] sm:text-5xl md:text-[58px] xl:text-[66px]">{heroTitle}</h1>
-              <p className="mt-5 max-w-2xl text-base text-muted md:text-lg">{dict.hero.sub}</p>
+          <div className="grid items-center gap-8 py-5 md:min-h-[calc(100dvh-64px)] md:grid-cols-12 md:gap-8 md:py-6 lg:py-8">
+            <div className="md:col-span-7 reveal" data-reveal>
+              <h1 className="display-font text-[36px] font-extrabold leading-[1.04] sm:text-[44px] md:text-[48px] lg:text-[54px] xl:text-[58px]">{heroTitle}</h1>
+              <p className="mt-4 max-w-2xl text-base text-muted md:text-[17px]">{dict.hero.sub}</p>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href="#contacts" className="cta-button-shine inline-flex items-center justify-center rounded-full bg-electric px-6 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95 transition">{dict.hero.ctaPrimary}</a>
                 <a href={waHeroHref} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full border border-line bg-white px-6 py-3 text-sm font-semibold hover:border-electric hover:text-fg transition">{dict.hero.ctaWhatsapp}</a>
                 <a href="#case" className="inline-flex items-center justify-center rounded-full border border-line bg-white px-6 py-3 text-sm font-semibold hover:border-electric hover:text-fg transition">{dict.hero.ctaSecondary}</a>
               </div>
 
-              <div className="mt-5 text-sm text-muted">{dict.hero.chips}</div>
+              <div className="mt-4 text-sm text-muted">{dict.hero.chips}</div>
 
               {heroMetrics.length ? (
-                <div className="mt-7 grid gap-3 sm:grid-cols-3">
+                <div className="mt-4 hidden gap-3 sm:grid-cols-3 xl:grid">
                   {heroMetrics.map((metric: any, idx: number) => (
-                    <div key={idx} className="metric-card rounded-2xl p-4 reveal" data-reveal>
-                      <div className="display-font text-2xl font-bold text-fg">{metric.value}</div>
+                    <div key={idx} className="metric-card rounded-2xl p-3 reveal" data-reveal>
+                      <div className="display-font text-xl font-bold text-fg">{metric.value}</div>
                       <div className="mt-1 text-xs uppercase tracking-[0.14em] text-muted">{metric.label}</div>
                     </div>
                   ))}
@@ -188,13 +188,13 @@ export default function LandingClient({ locale }: { locale: Locale }) {
               ) : null}
             </div>
 
-            <div className="md:col-span-6 reveal reveal-delay-1" data-reveal>
-              <div className="ui-card glass-card rounded-3xl p-6 shadow-soft md:p-7">
+            <div className="md:col-span-5 reveal reveal-delay-1" data-reveal>
+              <div className="ui-card glass-card rounded-3xl p-5 shadow-soft md:p-5">
                 <div className="text-xs uppercase tracking-[0.16em] text-electric">{locale === "en" ? "Coding in progress" : "Кодинг в процессе"}</div>
-                <div className="display-font mt-3 text-2xl font-semibold">{locale === "en" ? "From commit to release" : "От коммита до релиза"}</div>
-                <p className="mt-3 text-sm text-muted">{locale === "en" ? "A simplified live view of how we turn requirements into production code." : "Упрощенный live-вид того, как мы превращаем требования в рабочий продакшн-код."}</p>
+                <div className="display-font mt-2 text-[30px] font-semibold leading-tight md:text-[34px]">{locale === "en" ? "From commit to release" : "От коммита до релиза"}</div>
+                <p className="mt-2 text-sm text-muted">{locale === "en" ? "A simplified live view of how we turn requirements into production code." : "Упрощенный live-вид того, как мы превращаем требования в рабочий продакшн-код."}</p>
 
-                <div className="code-editor mt-6">
+                <div className="code-editor mt-4">
                   <div className="code-editor-head">
                     <div className="code-dots">
                       <span />
@@ -231,16 +231,16 @@ export default function LandingClient({ locale }: { locale: Locale }) {
                   </div>
                 </div>
 
-                <div className="mt-4 grid grid-cols-3 gap-2 text-xs">
-                  <div className="rounded-lg border border-line bg-white px-3 py-2 text-muted">
+                <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
+                  <div className="rounded-lg border border-line bg-white px-2.5 py-2 text-muted">
                     <span className="block font-semibold text-fg">UI</span>
                     <span>{locale === "en" ? "Ready" : "Готово"}</span>
                   </div>
-                  <div className="rounded-lg border border-line bg-white px-3 py-2 text-muted">
+                  <div className="rounded-lg border border-line bg-white px-2.5 py-2 text-muted">
                     <span className="block font-semibold text-fg">API</span>
                     <span>{locale === "en" ? "Synced" : "Синхрон"}</span>
                   </div>
-                  <div className="rounded-lg border border-line bg-white px-3 py-2 text-muted">
+                  <div className="rounded-lg border border-line bg-white px-2.5 py-2 text-muted">
                     <span className="block font-semibold text-fg">QA</span>
                     <span>{locale === "en" ? "Running" : "Проверка"}</span>
                   </div>
