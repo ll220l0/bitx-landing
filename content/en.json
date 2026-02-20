@@ -1,0 +1,222 @@
+﻿{
+  "meta": {
+    "title": "BITX - Product Engineering Studio for Web and Mobile",
+    "description": "BITX designs and ships high-performing web and mobile products: strategy, UX/UI, development, integrations, and growth support."
+  },
+  "nav": {
+    "services": "Services",
+    "clients": "Clients",
+    "case": "Case",
+    "process": "Process",
+    "faq": "FAQ",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "kicker": "BITX // SYSTEM ONLINE",
+    "h1": "We launch digital products like high-stakes operations",
+    "sub": "BITX designs architecture, UX, and engineering as one execution system. You get speed, control, and stable releases without delivery chaos.",
+    "ctaPrimary": "Get a project estimate",
+    "ctaWhatsapp": "Discuss on WhatsApp",
+    "ctaSecondary": "Explore case study",
+    "chips": "Web platforms | Mobile apps | Integrations | Scale-ready architecture",
+    "metrics": [
+      { "value": "24h", "label": "First estimate" },
+      { "value": "2-6 weeks", "label": "MVP launch" },
+      { "value": "95%", "label": "On-time delivery" }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "We operate like an engineering strike team: short cycles, complete visibility, and control over every critical stage.",
+    "cards": [
+      {
+        "title": "Web Platforms",
+        "text": "SaaS products, B2B dashboards, internal tools, eCommerce, and high-converting marketing websites."
+      },
+      {
+        "title": "Mobile Applications",
+        "text": "Native-feel iOS and Android apps with clean UX, robust API integration, and analytics-first setup."
+      },
+      {
+        "title": "Product Design & UX",
+        "text": "Research-backed UX flows, UI systems, prototypes, and interaction design focused on conversion and retention."
+      },
+      {
+        "title": "Integrations & Automation",
+        "text": "CRM/ERP, payments, logistics, notification systems, reporting pipelines, and workflow automation."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why teams plug in BITX",
+    "items": [
+      {
+        "title": "Strategy without illusion",
+        "text": "We surface weak assumptions early and focus on the decisions that move real business metrics."
+      },
+      {
+        "title": "Control under pressure",
+        "text": "Weekly sprints, demos, and transparent backlog priorities keep timeline, budget, and risk visible."
+      },
+      {
+        "title": "Production-grade engineering",
+        "text": "Clean architecture, reliable release pipelines, and code that stays maintainable as the product grows."
+      },
+      {
+        "title": "Continuous upgrade mode",
+        "text": "After launch, we keep hardening and scaling the product through measurable optimization cycles."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Who we work with",
+    "subtitle": "We support startups, SMB, and enterprise product teams where delivery speed directly impacts growth.",
+    "items": [
+      {
+        "title": "Startups",
+        "text": "Validate product hypotheses fast, launch MVP, and move to a stable growth roadmap."
+      },
+      {
+        "title": "SMB",
+        "text": "Digitize operations, unify systems, and increase team throughput with custom software."
+      },
+      {
+        "title": "In-house product teams",
+        "text": "Extend your engineering and design capacity without slowing internal velocity."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Client feedback",
+    "items": [
+      {
+        "q": "Our roadmap was stuck until BITX turned it into a working release engine.",
+        "a": "They converted business pressure into clear sprint execution and shipped without quality regressions."
+      },
+      {
+        "q": "This felt less like outsourcing and more like adding a senior internal unit.",
+        "a": "Strong ownership, hard delivery discipline, and engineering decisions we can trust for the long run."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Selected cases",
+    "items": [
+      {
+        "name": "Warehouse & Logistics Control Platform",
+        "tag": "Web dashboard",
+        "text": "End-to-end operations control with role-based access, inventory movement, and audit trails."
+      },
+      {
+        "name": "Multi-brand Commerce Catalog",
+        "tag": "Web",
+        "text": "Fast product discovery, content management workflows, and synchronized stock updates."
+      },
+      {
+        "name": "Service Booking Mobile App",
+        "tag": "Mobile",
+        "text": "Customer-facing application with onboarding, personalized offers, and push notifications."
+      }
+    ]
+  },
+  "case": {
+    "title": "Case study",
+    "name": "Warehouse & Logistics Management System",
+    "goalTitle": "Challenge",
+    "goal": "Unify fragmented inventory and operations workflows into one reliable real-time system.",
+    "doneTitle": "What we delivered",
+    "done": "A modular web platform with inventory flows, permissions, operation logging, and reporting.",
+    "impactTitle": "Business impact",
+    "impact": "Manual errors dropped, processing speed increased, and management gained full operational visibility."
+  },
+  "process": {
+    "title": "How we deliver",
+    "steps": [
+      {
+        "title": "Discovery",
+        "text": "Business goals, key users, success metrics, and technical constraints."
+      },
+      {
+        "title": "Design",
+        "text": "UX flows, interactive prototypes, and UI system aligned with product objectives."
+      },
+      {
+        "title": "Build",
+        "text": "Incremental sprint delivery with QA, demos, and production-grade engineering practices."
+      },
+      {
+        "title": "Scale",
+        "text": "Launch support, analytics, optimization loops, and roadmap expansion."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "How much does a project usually cost?",
+        "a": "Cost depends on scope and complexity. We provide a transparent phased estimate after a focused discovery call."
+      },
+      {
+        "q": "How quickly can we launch MVP?",
+        "a": "Most MVPs go live within 2-6 weeks depending on integrations, required platforms, and feature depth."
+      },
+      {
+        "q": "Do you work with existing in-house teams?",
+        "a": "Yes. We plug into your workflow, coordinate with your leads, and deliver as an accountable partner."
+      },
+      {
+        "q": "How are scope changes handled?",
+        "a": "Through prioritized backlog and sprint planning. Every change is evaluated for impact on timeline and budget."
+      },
+      {
+        "q": "Who owns the code and infrastructure?",
+        "a": "You do. Repositories, access rights, and infrastructure remain under your ownership."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Send your brief - get a clear execution blueprint in 24 hours",
+    "subtitle": "Share the mission. We will return with architecture direction, launch phases, and realistic delivery boundaries.",
+    "name": "Name",
+    "contact": "Contact (WhatsApp / Telegram / Email)",
+    "message": "Project brief",
+    "projectType": "Project type",
+    "projectType.web": "Web",
+    "projectType.mobile": "Mobile",
+    "projectType.both": "Web + Mobile",
+    "timeline": "Target timeline (optional)",
+    "budget": "Budget range (optional)",
+    "send": "Get estimate",
+    "sending": "Sending...",
+    "failed": "Could not send the request. Please use direct contact options.",
+    "whatsappFallback": "Send via WhatsApp",
+    "successTitle": "Request accepted",
+    "successText": "Great. Our team will contact you shortly with clarifying questions and the next step.",
+    "successWhatsapp": "Open WhatsApp",
+    "successEmail": "Send by Email",
+    "successAnother": "Submit another request",
+    "toastRateLimit": "Too many requests. Please try again in a few minutes.",
+    "toastSuccess": "Request sent. We will contact you shortly.",
+    "toastFailed": "Failed to send. Please use WhatsApp or email.",
+    "emailSubject": "BITX - New project request",
+    "directTag": "HOT CHANNEL",
+    "directTitle": "Need direct access to the team?",
+    "directText": "Reach us directly. During working hours we usually respond within one hour.",
+    "directWhatsapp": "WhatsApp",
+    "directTelegram": "Telegram",
+    "directEmail": "Email",
+    "checkTitle": "What happens next",
+    "checkpoints": [
+      "Short technical brief to lock project context",
+      "Initial solution blueprint and architecture direction",
+      "Phased launch plan with priorities and risk zones"
+    ]
+  },
+  "footer": {
+    "title": "Product engineering studio for web and mobile teams",
+    "wa": "WhatsApp",
+    "tg": "Telegram",
+    "email": "Email"
+  }
+}
