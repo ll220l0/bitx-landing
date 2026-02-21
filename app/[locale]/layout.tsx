@@ -27,16 +27,41 @@ export async function generateMetadata({
   const { locale } = await params;
   const loc: Locale = isLocale(locale) ? locale : "ru";
   const dict = await getDict(loc);
+  const localePath = `/${loc}`;
+  const ogImagePath = `${localePath}/opengraph-image`;
 
   return {
     title: dict.meta.title,
     description: dict.meta.description,
     metadataBase: new URL("https://bitx.kg"),
+    alternates: {
+      canonical: localePath,
+      languages: {
+        ru: "/ru",
+        en: "/en"
+      }
+    },
     openGraph: {
       title: dict.meta.title,
       description: dict.meta.description,
+      url: localePath,
+      siteName: "BITX",
+      locale: loc === "en" ? "en_US" : "ru_RU",
+      images: [
+        {
+          url: ogImagePath,
+          width: 1200,
+          height: 630,
+          alt: dict.meta.title
+        }
+      ],
       type: "website"
-      // images: [{ url: "/og.png", width: 1200, height: 630 }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.meta.title,
+      description: dict.meta.description,
+      images: [ogImagePath]
     }
   };
 }
