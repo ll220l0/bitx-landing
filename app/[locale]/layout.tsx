@@ -31,7 +31,7 @@ export async function generateMetadata({
   return {
     title: dict.meta.title,
     description: dict.meta.description,
-    metadataBase: new URL("https://bitx.dev.kg"),
+    metadataBase: new URL("https://bitx.kg"),
     openGraph: {
       title: dict.meta.title,
       description: dict.meta.description,
