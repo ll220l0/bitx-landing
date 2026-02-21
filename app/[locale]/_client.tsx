@@ -23,7 +23,7 @@ function pickDict(locale: Locale) {
 export default function LandingClient({ locale }: { locale: Locale }) {
   const dict = useMemo(() => pickDict(locale), [locale]);
   const waPhone = "+996 509 000 991";
-  const email = "bitxkg@gmail.com";
+  const email = "info@bitx.kg";
   const tgHref = "https://t.me/bitx_kg";
   const contactsRef = useRef<HTMLDivElement | null>(null);
 
